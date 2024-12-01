@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serralheria Bandeirantes</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Serralheria Bandeirantes</h1>
+        <p>Faça seu orçamento e receba uma simulação no seu email na mesma hora</p>
+        <form>
+            <div class="form-group">
+                <label for="tipo-servico">Tipo de serviço:</label>
+                <select id="tipo-servico">
+                    <option value="portão">Portão</option>
+                    <option value="grade">Grade</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="medidas">Medidas:</label>
+                <select id="medidas">
+                    <option value="pequeno">Pequeno</option>
+                    <option value="médio">Médio</option>
+                    <option value="grande">Grande</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="material">Material:</label>
+                <select id="material">
+                    <option value="ferro">Ferro</option>
+                    <option value="alumínio">Alumínio</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="detalhes">Detalhes:</label>
+                <textarea id="detalhes" rows="4"
+                    placeholder="Descreva aqui mais detalhes sobre seu orçamento..."></textarea>
+            </div>
+            <button type="submit">Enviar Orçamento</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
