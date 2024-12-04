@@ -27,40 +27,39 @@
         </nav>
 
     </header>
-    <div class="container">
-        <h1>Serralheria Bandeirantes</h1>
-        <p>Faça seu orçamento e receba uma simulação no seu email na mesma hora</p>
+    <main class="form-container">
         <form>
+            <h1>Orçamento</h1>
+            <h2>Faça seu orçamento e receba uma simulação no seu email na mesma hora</h2><br><br><br>
+
             <div class="form-group">
-                <label for="tipo-servico">Tipo de serviço:</label>
-                <select id="tipo-servico">
-                    <option value="portão">Portão</option>
-                    <option value="grade">Grade</option>
+                <label for="tipo-servico">Tipo de serviço</label>
+                <select id="tipo-servico" name="tipo-servico">
+                    <option value="">Selecione</option>
+                    <option value="1">Serviço 1</option>
+                    <option value="2">Serviço 2</option>
                 </select>
             </div>
+
             <div class="form-group">
-                <label for="medidas">Medidas:</label>
-                <select id="medidas">
-                    <option value="pequeno">Pequeno</option>
-                    <option value="médio">Médio</option>
-                    <option value="grande">Grande</option>
+                <label>Medidas</label>
+                <div class="form-row">
+                    <input type="text" placeholder="Largura (cm)" />
+                    <input type="text" placeholder="Altura (cm)" />
+                    <input type="text" placeholder="Comprimento (cm)" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="material">Material</label>
+                <select id="material" name="material">
+                    <option value="">Selecione</option>
+                    <option value="papel">Papel</option>
+                    <option value="plástico">Plástico</option>
                 </select>
-            </div>
-            <div class="form-group">
-                <label for="material">Material:</label>
-                <select id="material">
-                    <option value="ferro">Ferro</option>
-                    <option value="alumínio">Alumínio</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="detalhes">Detalhes:</label>
-                <textarea id="detalhes" rows="4"
-                    placeholder="Descreva aqui mais detalhes sobre seu orçamento..."></textarea>
-            </div>
-            <button type="submit">Enviar Orçamento</button>
-        </form>
-    </div>
+                <br><br><br>
+                <button>Enviar orçamento</button>
+    </main>
     <script src="script.js"></script>
 </body>
 
