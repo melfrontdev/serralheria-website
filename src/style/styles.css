@@ -48,6 +48,7 @@ nav li {
     list-style: none;
 }
 
+
 .sub-menu {
     display: flex;
     flex-direction: column;
@@ -60,10 +61,18 @@ nav li {
     
 }
 
-.minha_conta:hover + .sub-menu {
+/* .minha_conta:hover + .sub-menu {
     opacity: 1;
     transition: .8s;
 
+} */
+
+.activate {
+    opacity: 1;
+}
+
+.inactivate {
+    opacity: 0;
 }
 
 main {
@@ -83,13 +92,14 @@ h2 {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #4D63C5;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .button-a {
@@ -101,8 +111,108 @@ button {
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
+    
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 
+/* contato */ 
 
+.info {
+    flex: 1;
+    background-color: #3b3b3b;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    display: flex;
+    gap:300px;
+    align-items: center;
+  }
+  
+  
+  .map {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .map img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 
+/* orçamento */
+
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    display: flex;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-row {
+    gap: 10px;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #4a73c7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .submit-btn:hover {
+    background: #365899;
+  }

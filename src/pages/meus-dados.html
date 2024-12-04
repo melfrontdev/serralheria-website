@@ -28,31 +28,40 @@
 
     </header>
     <main>
-        <h2>Meus Dados</h2>
-        <div class="data-row">
-            <div class="data-item">
-                <p>Rua</p>
-                <p>Rua Alameda dos Pássaros, 1346</p>
-                <a href="#" class="download"><i class="fas fa-download"></i></a>
+        <h1>Meus Dados</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="rua">Rua</label>
+                    <input id="rua" type="text" placeholder="Rua">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" placeholder="Email">
+                </div>
             </div>
-            <div class="data-item">
-                <p>Email</p>
-                <p>Ana Maria1345@gmail.com</p>
-                <a href="#" class="download"><i class="fas fa-download"></i></a>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="cep">CEP</label>
+                    <input id="cep" type="text" placeholder="CEP">
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password" placeholder="Senha">
+                </div>
             </div>
-        </div>
-        <div class="data-row">
-            <div class="data-item">
-                <p>Telefone</p>
-                <p>03456-987</p>
-                <a href="#" class="download"><i class="fas fa-download"></i></a>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bairro">Bairro</label>
+                    <input id="bairro" type="text" placeholder="Bairro">
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" type="text" placeholder="Telefone">
+                </div>
             </div>
-            <div class="data-item">
-                <p>Bairro</p>
-                <p>Bairro das Palmeiras</p>
-                <a href="#" class="download"><i class="fas fa-download"></i></a>
-            </div>
-        </div>
+            <button type="submit">Editar meus dados</button>
+        </form>
     </main>
 </body>
 

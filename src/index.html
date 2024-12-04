@@ -17,8 +17,8 @@
             <ul>
                 <li><a href="./pages/contato.html">Endereço</a></li>
                 <li><a href="./pages/sobre.html">Sobre Nós</a></li>
-                <li><a href="./pages/meus-dados.html">Minha Conta</a>
-                    <ul class="sub-menu">
+                <li><a class="minha_conta" href="./pages/meus-dados.html">Minha Conta</a>
+                    <ul class="sub-menu" onmouseover="handleMenu">
                         <li><a href="./pages/orcamento.html">Meus Pedidos</a></li>
                         <li><a href="./pages/meus-dados.html">Meus Dados</a></li>
                     </ul>
@@ -33,6 +33,15 @@
         <h2>SERVIÇOS PROFISSIONAIS<br>Mais de 40 anos de experiência</h2><br><br><br><br><br><br><br>
         <a href="#" class="button-a">FAÇA SEU ORÇAMENTO</a>
     </main>
+
+    <script>
+        const handleMenu = () => {
+            const subMenu = document.querySelector(".sub-menu");
+
+            subMenu.classList.toggle('.activate');
+            subMenu.style.background = "red";
+        }
+    </script>
 </body>
 
 </html>
