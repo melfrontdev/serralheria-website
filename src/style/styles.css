@@ -48,7 +48,10 @@ nav li {
     list-style: none;
 }
 
-
+.minha-conta {
+    font-weight: bold;
+    cursor: pointer;
+}
 .sub-menu {
     display: flex;
     flex-direction: column;
@@ -60,20 +63,16 @@ nav li {
     padding: .5rem;
     
 }
+.active {
+    opacity: 1;
+    transition: .8s;
+}
 
 /* .minha_conta:hover + .sub-menu {
     opacity: 1;
     transition: .8s;
 
 } */
-
-.activate {
-    opacity: 1;
-}
-
-.inactivate {
-    opacity: 0;
-}
 
 main {
     text-align: center;
@@ -92,14 +91,13 @@ h2 {
 }
 
 button {
-    background-color: #4D63C5;
+    background-color: #4CAF50;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
-    cursor: pointer;
+    font-size: 16px;
 }
 
 .button-a {
@@ -111,9 +109,7 @@ button {
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
-    
 }
-
 .form-row {
     display: flex;
     justify-content: space-between;
@@ -135,7 +131,6 @@ label {
     font-weight: bold;
     color: #34495e;
 }
-
 input {
     width: 50%;
     padding: 10px;
@@ -144,9 +139,7 @@ input {
     font-size: 16px;
 }
 
-
 /* contato */ 
-
 .info {
     flex: 1;
     background-color: #3b3b3b;
@@ -172,9 +165,8 @@ input {
     height: auto;
     border-radius: 10px;
   }
-
+  
 /* orçamento */
-
 .form-container {
     background: #fff;
     padding: 20px;
@@ -183,11 +175,9 @@ input {
     align-items: center;
     display: flex;
   }
-
   .form-group {
     margin-bottom: 15px;
   }
-
   .form-row {
     gap: 10px;
   }
@@ -199,7 +189,6 @@ input {
     border-radius: 5px;
     font-size: 14px;
   }
-
   .submit-btn {
     width: 100%;
     padding: 10px;
@@ -212,7 +201,8 @@ input {
     cursor: pointer;
     transition: background 0.3s;
   }
-
   .submit-btn:hover {
     background: #365899;
   }
+
+
