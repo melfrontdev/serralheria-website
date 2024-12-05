@@ -6,30 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serralheria Bandeirantes - Meus Dados</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link rel="shortcut icon" href="../assets/img/metalwork.png" type="image/png" />
 </head>
 
 <body>
     <header>
-        <div class="image_header">
-
-        </div>
+        <div class="image_header"></div>
         <nav>
             <ul>
-                <li><a href="./pages/contato.html">Endereço</a></li>
-                <li><a href="./pages/sobre.html">Sobre Nós</a></li>
-                <li><a href="./pages/meus-dados.html">Minha Conta</a>
+                <li><a href="contato.html">Endereço</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li class="minha-conta">
+                    Minha Conta
                     <ul class="sub-menu">
-                        <li><a href="./pages/orcamento.html">Meus Pedidos</a></li>
-                        <li><a href="./pages/meus-dados.html">Meus Dados</a></li>
+                        <li><a href="orcamento.html">Meus Pedidos</a></li>
+                        <li><a href="meus-dados.html">Meus Dados</a></li>
+                        <li><a href="cadastro.html">Login</a></li>
                     </ul>
                 </li>
+
             </ul>
         </nav>
 
     </header>
-    <main>
-        <h1>Meus Dados</h1>
+    <main class="container">
         <form>
+            <h1>Meus Dados</h1>
             <div class="form-row">
                 <div class="form-group">
                     <label for="rua">Rua</label>
@@ -63,6 +65,13 @@
             <button type="submit">Editar meus dados</button>
         </form>
     </main>
+    <script>
+        const minhaConta = document.querySelector('.minha-conta');
+        const subMenu = document.querySelector('.sub-menu');
+        minhaConta.addEventListener('click', () => {
+            subMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
